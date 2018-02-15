@@ -3,8 +3,9 @@ define(['angularAMD'], function(ng) {
 
     var config = angular.module('config', [])
         .constant('ENV', {
-          baseURL: "http://192.168.101:", // IP of controller, in this case, ODL controller is running in a Virtual machine with IP 192.168.101
-          adSalPort: "8080",  // Port of ODL controller 
+          baseURL: "http://192.168.56.101:", // IP of controller, in this case, ODL controller is running in a Virtual machine with IP 192.168.101
+          // PORT IS 8080 FOR BERYLLIUM ODL VERSION. FOR NEXTS VERSION (CARBON, NITROGEN...) IS 8181
+          adSalPort: "8080",  // Port of ODL controller is 8080
           mdSalPort : "8080", // Port of ODL controller
           ofmPort : "8080",	  // Port of ODL controller
           configEnv : "ENV_DEV",
