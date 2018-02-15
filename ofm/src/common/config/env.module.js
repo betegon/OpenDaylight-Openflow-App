@@ -3,13 +3,13 @@ define(['angularAMD'], function(ng) {
 
     var config = angular.module('config', [])
         .constant('ENV', {
-          baseURL: "http://localhost:",
-          adSalPort: "8181",
-          mdSalPort : "8181",
-          ofmPort : "8181",
+          baseURL: "http://192.168.101:", // IP of controller, in this case, ODL controller is running in a Virtual machine with IP 192.168.101
+          adSalPort: "8080",  // Port of ODL controller 
+          mdSalPort : "8080", // Port of ODL controller
+          ofmPort : "8080",	  // Port of ODL controller
           configEnv : "ENV_DEV",
-          odlUserName: 'admin',
-          odlUserPassword: 'admin',
+          odlUserName: 'admin',  	// ODL UserName
+          odlUserPassword: 'admin', 	// ODL UserPassword
           getBaseURL : function(salType){
               if(salType!==undefined){
                   var urlPrefix = "";
